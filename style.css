@@ -300,6 +300,7 @@ header.scrolled {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    padding-top: 80px; /* Account for fixed header */
 }
 
 .hero-overlay {
