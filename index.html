@@ -3,469 +3,182 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional satellite and installation services by Shammah Sat in Sunyani, Ghana. Fast, affordable, and reliable.">
-    <title>Shammah Sat - Reliable Satellite &amp; Installation Services</title>
-    
-    <!-- Security Meta Tags -->
-    <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <meta http-equiv="X-Frame-Options" content="DENY">
-    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="description" content="GYIC - Empowering young people to create the future they desire.">
+    <title>GYIC | Empowering Youth, Observing Rights</title>
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
     
     <!-- Phosphor Icons -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     
-    <!-- CSS Link -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Sticky Navigation -->
-    <header id="header">
-        <div class="nav-container">
-            <a href="#" class="logo">
-                Shammah Sat
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo-wrapper">
+                <img src="GYIC.jpg" alt="GYIC Logo" class="nav-logo">
+                <span class="logo-text">GLOBAL YOUTH INNOVATION CENTER</span>
             </a>
-            <nav class="nav-links">
-                <a href="#services">Services</a>
-                <a href="#pricing">Pricing</a>
-                <a href="#reviews">Reviews</a>
+            
+            <div class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="#impact">Our Impact</a>
+                <a href="volunteer.html">Volunteer</a>
+                <a href="blog.html">Articles</a>
                 <a href="#contact">Contact</a>
-            </nav>
+            </div>
+            
             <div class="nav-actions">
-                <a href="tel:0549133216" class="btn btn-outline"><i class="ph ph-phone"></i> Call Now</a>
-                <button class="mobile-menu-btn" aria-label="Toggle Menu">
-                    <i class="ph ph-list"></i>
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle Dark Mode">
+                    <i class="ph ph-moon"></i>
                 </button>
+                <a href="#donate" class="btn btn-accent btn-sm">Donate</a>
+                <button class="mobile-menu-btn"><i class="ph ph-list"></i></button>
             </div>
         </div>
-        <!-- Mobile Nav Menu -->
-        <div class="mobile-menu">
-            <a href="#services">Services</a>
-            <a href="#pricing">Pricing</a>
-            <a href="#reviews">Reviews</a>
-            <a href="#contact">Contact</a>
-            <a href="tel:0549133216" class="btn btn-primary" style="display:inline-block; margin-top:1rem;"><i class="ph ph-phone"></i> Call Now</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-slider">
+            <div class="slide active">
+                <div class="slide-overlay"></div>
+                <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=1920" alt="Youth Empowerment" class="slide-img">
+                <div class="container hero-container">
+                    <div class="hero-content">
+                        <span class="badge">Youth Empowerment</span>
+                        <h1>Inspiring the Leaders of Tomorrow</h1>
+                        <p>We provide the tools, mentorship, and platform for young people to build a just and equitable future.</p>
+                        <div class="hero-btns">
+                            <a href="volunteer.html" class="btn btn-primary">Join as Volunteer</a>
+                            <a href="#impact" class="btn btn-secondary">Learn Our Story</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-overlay"></div>
-        <div class="container hero-container">
-            <div class="hero-content">
-                <h1>Reliable Satellite &amp; Installation Services by Shammah Sat</h1>
-                <p>Professional technical solutions for homes and businesses in Sunyani and beyond. Skilled. Fast. Professional.</p>
-                <div class="hero-buttons">
-                    <a href="#booking" class="btn btn-primary btn-large">Book Appointment</a>
-                    <a href="tel:0549133216" class="btn btn-secondary btn-large"><i class="ph ph-phone"></i> Call Now</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section class="services section-padding" id="services">
+    <!-- Mission & Vision Section -->
+    <section class="mission-vision section-padding bg-alt">
         <div class="container">
-            <h2 class="section-title">Our Services</h2>
-            <p class="section-subtitle">We provide top-notch installation services for all your needs.</p>
-            
-            <div class="services-grid">
-                <!-- Satellite & TV -->
-                <div class="service-card image-card">
-                    <div class="service-image">
-                        <img src="satellite.jpg" alt="Satellite & TV Installation">
-                    </div>
-                    <div class="service-content">
-                        <div class="icon-wrapper"><i class="ph ph-monitor"></i></div>
-                        <h3>Satellite & TV Setup</h3>
-                        <p>Crystal clear reception setup and dish alignment for all your entertainment needs.</p>
-                    </div>
+            <div class="mv-grid">
+                <div class="mv-card mission reveal">
+                    <div class="mv-icon"><i class="ph ph-target"></i></div>
+                    <h2>Our Mission</h2>
+                    <p>To empower and inspire young people through sustainable development initiatives, advocacy, and direct support, ensuring they have the agency to shape their own destinies.</p>
                 </div>
-
-                <!-- Starlink -->
-                <div class="service-card image-card">
-                    <div class="service-image">
-                        <img src="starlink.jpg" alt="Starlink Installation">
-                    </div>
-                    <div class="service-content">
-                        <div class="icon-wrapper"><i class="ph ph-wifi-high"></i></div>
-                        <h3>Starlink Installation</h3>
-                        <p>High-speed, low-latency internet dish setup for homes and businesses.</p>
-                    </div>
-                </div>
-
-                <!-- CCTV -->
-                <div class="service-card image-card">
-                    <div class="service-image">
-                        <img src="cctv.jpg" alt="CCTV Camera Installation">
-                    </div>
-                    <div class="service-content">
-                        <div class="icon-wrapper"><i class="ph ph-security-camera"></i></div>
-                        <h3>CCTV Camera Setup</h3>
-                        <p>Secure your property with professional surveillance camera placement and wiring.</p>
-                    </div>
-                </div>
-
-                <!-- Air Condition -->
-                <div class="service-card image-card">
-                    <div class="service-image">
-                        <img src="ac.jpg" alt="Air Condition Installation">
-                    </div>
-                    <div class="service-content">
-                        <div class="icon-wrapper"><i class="ph ph-wind"></i></div>
-                        <h3>AC Installation</h3>
-                        <p>Expert AC mounting, wiring, and maintenance for maximum cooling efficiency.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="center-btn">
-                <a href="#booking" class="btn btn-primary">Book Appointment</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pricing Section -->
-    <section class="pricing section-padding" id="pricing">
-        <div class="container">
-            <h2 class="section-title">Transparent Pricing</h2>
-            <p class="section-subtitle">Affordable rates for premium installations.</p>
-            
-            <div class="pricing-grid">
-                <!-- Satellite Pricing -->
-                <div class="pricing-card">
-                    <div class="pricing-header">
-                        <h3>Satellite Installation</h3>
-                        <i class="ph ph-monitor"></i>
-                    </div>
-                    <ul class="pricing-list">
-                        <li>
-                            <span>Multi TV / DStv / Others</span>
-                            <span class="price">150 GHS</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Starlink Pricing -->
-                <div class="pricing-card featured">
-                    <div class="pricing-header">
-                        <h3>Starlink Installation</h3>
-                        <i class="ph ph-wifi-high"></i>
-                    </div>
-                    <ul class="pricing-list">
-                        <li>
-                            <span>Without mounting bar</span>
-                            <span class="price">300 GHS</span>
-                        </li>
-                        <li>
-                            <span>Customized Mounting Bar</span>
-                            <span class="price">550 GHS</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- AC Pricing -->
-                <div class="pricing-card">
-                    <div class="pricing-header">
-                        <h3>Air Condition</h3>
-                        <i class="ph ph-wind"></i>
-                    </div>
-                    <ul class="pricing-list">
-                        <li>
-                            <span>1.5 HP Installation</span>
-                            <span class="price">350 GHS</span>
-                        </li>
-                        <li>
-                            <span>2.5 HP Installation</span>
-                            <span class="price">550 GHS</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- CCTV Pricing -->
-                <div class="pricing-card full-width">
-                    <div class="pricing-header">
-                        <h3>CCTV Installation</h3>
-                        <i class="ph ph-security-camera"></i>
-                    </div>
-                    <div class="cctv-grid">
-                        <div class="cctv-item">
-                            <span>4 Channels</span>
-                            <span class="price">400 GHS</span>
-                        </div>
-                        <div class="cctv-item">
-                            <span>8 Channels</span>
-                            <span class="price">700 GHS</span>
-                        </div>
-                        <div class="cctv-item">
-                            <span>12 Channels</span>
-                            <span class="price">1050 GHS</span>
-                        </div>
-                        <div class="cctv-item">
-                            <span>16 Channels</span>
-                            <span class="price">1400 GHS</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Before & After Section -->
-    <section class="quality section-padding" id="quality">
-        <div class="container">
-            <h2 class="section-title">The Shammah Sat Quality</h2>
-            <p class="section-subtitle">We pride ourselves on neat, professional installations that last.</p>
-            
-            <div class="comparison-grid">
-                <div class="comparison-item">
-                    <div class="comparison-image">
-                        <img src="before_cables.jpg" alt="Messy Installation" loading="lazy">
-                        <span class="badge badge-error">The Problem</span>
-                    </div>
-                    <p>Messy, tangled cables are a safety hazard and look unprofessional.</p>
-                </div>
-                <div class="comparison-item">
-                    <div class="comparison-image">
-                        <img src="after_cables.jpg" alt="Professional Installation" loading="lazy">
-                        <span class="badge badge-success">Our Solution</span>
-                    </div>
-                    <p>We ensure every wire is perfectly managed, labeled, and neatly routed.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Choose Us -->
-    <section class="features section-padding">
-        <div class="container">
-            <h2 class="section-title">Why Choose Shammah Sat</h2>
-            <div class="features-flex">
-                <div class="feature-item">
-                    <div class="feature-icon"><i class="ph ph-rocket-launch"></i></div>
-                    <h4>Fast Response</h4>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon"><i class="ph ph-wallet"></i></div>
-                    <h4>Affordable Pricing</h4>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon"><i class="ph ph-medal"></i></div>
-                    <h4>Professional Work</h4>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon"><i class="ph ph-map-pin"></i></div>
-                    <h4>Available Anywhere</h4>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Reviews Section -->
-    <section class="reviews section-padding" id="reviews">
-        <div class="reviews-bg"></div>
-        <div class="container relative-z">
-            <h2 class="section-title">What My Clients Say</h2>
-            <p class="section-subtitle">Read what our happy customers have experienced.</p>
-            
-            <div class="carousel-container">
-                <div class="carousel-track" id="carouselTrack">
-                    <!-- Review 1 -->
-                    <div class="review-card">
-                        <div class="stars">
-                            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
-                        </div>
-                        <p class="review-text">"Very fast and clean installation. Highly recommend!"</p>
-                        <h4 class="client-name">- Kwame O.</h4>
-                    </div>
-                    <!-- Review 2 -->
-                    <div class="review-card">
-                        <div class="stars">
-                            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
-                        </div>
-                        <p class="review-text">"Professional and affordable service. The CCTV setup is perfect."</p>
-                        <h4 class="client-name">- Afia M.</h4>
-                    </div>
-                    <!-- Review 3 -->
-                    <div class="review-card">
-                        <div class="stars">
-                            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
-                        </div>
-                        <p class="review-text">"Excellent Starlink installation. Great communication throughout."</p>
-                        <h4 class="client-name">- David T.</h4>
-                    </div>
-                </div>
-                <div class="carousel-nav">
-                    <button id="prevBtn" aria-label="Previous Review"><i class="ph ph-caret-left"></i></button>
-                    <div class="carousel-dots" id="carouselDots"></div>
-                    <button id="nextBtn" aria-label="Next Review"><i class="ph ph-caret-right"></i></button>
-                </div>
-            </div>
-
-            <div class="leave-review">
-                <h3>Have we worked together?</h3>
-                <button class="btn btn-outline" id="openReviewForm">Leave a Review</button>
                 
-                <!-- Review Form -->
-                <div class="review-form-container hidden" id="reviewFormContainer">
-                    <form id="reviewForm" class="review-form">
-                        <input type="hidden" id="reviewRating" value="0">
-                        <div class="form-group">
-                            <label for="reviewName">Your Name</label>
-                            <input type="text" id="reviewName" placeholder="Full Name" required maxlength="50" autocomplete="name">
-                        </div>
-                        <div class="form-group">
-                            <label for="reviewText">Your Experience</label>
-                            <textarea id="reviewText" rows="4" placeholder="How was our service?" required maxlength="500"></textarea>
-                        </div>
-                        <div class="rating-input">
-                            <i class="ph ph-star star-btn" data-val="1" role="button" aria-label="1 Star"></i>
-                            <i class="ph ph-star star-btn" data-val="2" role="button" aria-label="2 Stars"></i>
-                            <i class="ph ph-star star-btn" data-val="3" role="button" aria-label="3 Stars"></i>
-                            <i class="ph ph-star star-btn" data-val="4" role="button" aria-label="4 Stars"></i>
-                            <i class="ph ph-star star-btn" data-val="5" role="button" aria-label="5 Stars"></i>
-                        </div>
-                        <button type="submit" class="btn btn-primary w-100">Submit Review</button>
-                    </form>
+                <div class="mv-card vision reveal highlight">
+                    <div class="mv-icon"><i class="ph ph-eye"></i></div>
+                    <h2 style="color: var(--clr-accent-yellow);">Our Vision</h2>
+                    <p class="vision-statement" style="border-left-color: var(--clr-accent-yellow);">"A just society where all young people are inspired and empowered to create the future they desire, and their human rights and dignity fully observed."</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Booking Section -->
-    <section class="booking section-padding" id="booking">
+    <!-- Impact Stats -->
+    <section class="impact-stats section-padding" id="impact">
         <div class="container">
-            <div class="booking-grid">
-                <div class="booking-info-card">
-                    <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=800" alt="" class="booking-img" loading="lazy">
-                    <div class="booking-text-overlay">
-                        <h2>Ready to get started?</h2>
-                        <p>Join hundreds of satisfied clients who trust Shammah Sat for their technical needs.</p>
-                        <div class="booking-benefits">
-                            <div class="benefit-item">
-                                <i class="ph ph-check-circle"></i>
-                                <span>Premium Quality Equipment</span>
-                            </div>
-                            <div class="benefit-item">
-                                <i class="ph ph-shield-check"></i>
-                                <span>Certified Installation Experts</span>
-                            </div>
-                            <div class="benefit-item">
-                                <i class="ph ph-clock"></i>
-                                <span>Fast &amp; Reliable Support</span>
-                            </div>
-                        </div>
+            <h2 class="section-title text-center reveal">Our Impact So Far</h2>
+            <div class="stats-grid">
+                <div class="stat-item reveal">
+                    <span class="stat-number" data-target="15000">0</span>
+                    <span class="stat-label">Youth Empowered</span>
+                </div>
+                <div class="stat-item reveal">
+                    <span class="stat-number" data-target="45">0</span>
+                    <span class="stat-label">Communities Reached</span>
+                </div>
+                <div class="stat-item reveal">
+                    <span class="stat-number" data-target="120">0</span>
+                    <span class="stat-label">Active Volunteers</span>
+                </div>
+                <div class="stat-item reveal">
+                    <span class="stat-number" data-target="12">0</span>
+                    <span class="stat-label">Success Stories</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The GYIC Quality: Interactive Timeline -->
+    <section class="timeline section-padding">
+        <div class="container">
+            <h2 class="section-title text-center reveal">Our Journey of Impact</h2>
+            <div class="timeline-container mt-5">
+                <div class="timeline-item reveal">
+                    <div class="time">2021</div>
+                    <div class="content">
+                        <h3>Foundation</h3>
+                        <p>GYIC was founded with a small group of 5 mentors and a big vision for the youth.</p>
                     </div>
                 </div>
-                <div class="booking-form-wrapper">
-                    <form id="bookingForm">
-                        <div class="form-group">
-                            <label for="name">Full Name</label>
-                            <input type="text" id="name" placeholder="Enter your name" required maxlength="100" autocomplete="name">
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" placeholder="e.g. 0549133216" required pattern="[0-9]{10,}" title="Please enter a valid phone number" autocomplete="tel">
-                        </div>
-                        <div class="form-group">
-                            <label for="service">Select Service</label>
-                            <select id="service" required>
-                                <option value="" disabled selected>Choose a service</option>
-                                <option value="multi-tv">Multi TV Installation</option>
-                                <option value="dstv">DStv Installation</option>
-                                <option value="cctv">CCTV Camera Installation</option>
-                                <option value="ac">Air Condition Installation</option>
-                                <option value="starlink">Starlink Installation</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="bookLocation">Location</label>
-                            <input type="text" id="bookLocation" required placeholder="E.g., Sunyani">
-                        </div>
-                        <div class="form-group">
-                            <label for="bookDate">Preferred Date</label>
-                            <input type="date" id="bookDate" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="bookMessage">Message (Optional)</label>
-                            <textarea id="bookMessage" rows="3" placeholder="Any extra details?"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-large w-100">Book Now</button>
-                    </form>
+                <div class="timeline-item reveal">
+                    <div class="time">2023</div>
+                    <div class="content">
+                        <h3>Regional Expansion</h3>
+                        <p>Reached over 10 communities and launched our digital literacy centers.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="time">2025</div>
+                    <div class="content">
+                        <h3>Global Recognition</h3>
+                        <p>Partnering with international organizations to scale our mentorship models.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="contact section-padding" id="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="section-subtitle">We are available to travel anywhere to serve you.</p>
-            
-            <div class="contact-grid">
-                <a href="tel:0549133216" class="contact-card">
-                    <div class="contact-icon"><i class="ph ph-phone-call"></i></div>
-                    <h3>Call Us</h3>
-                    <p>0549133216</p>
-                </a>
-                <a href="mailto:manuelshammah1718@gmail.com" class="contact-card">
-                    <div class="contact-icon"><i class="ph ph-envelope-simple"></i></div>
-                    <h3>Email Us</h3>
-                    <p>manuelshammah1718@gmail.com</p>
-                </a>
-                <div class="contact-card">
-                    <div class="contact-icon"><i class="ph ph-map-pin"></i></div>
-                    <h3>Location</h3>
-                    <p>Sunyani, Ghana</p>
-                </div>
+    <!-- Newsletter Section -->
+    <section class="newsletter section-padding bg-alt">
+        <div class="container text-center">
+            <div class="newsletter-card reveal">
+                <h2>Stay Updated</h2>
+                <p>Join our monthly newsletter to get success stories and opportunities delivered to your inbox.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
-        <div class="container footer-content">
+    <footer class="footer section-padding">
+        <div class="container footer-grid">
             <div class="footer-brand">
-                <a href="#" class="logo">
-                    Shammah Sat
-                </a>
-                <p>Professional installations you can trust.</p>
+                <h3>GLOBAL YOUTH INNOVATION CENTER</h3>
+                <p>Empowering young people to create the future they desire.</p>
+                <div class="social-links">
+                    <a href="#"><i class="ph ph-facebook-logo"></i></a>
+                    <a href="#"><i class="ph ph-instagram-logo"></i></a>
+                    <a href="#"><i class="ph ph-twitter-logo"></i></a>
+                </div>
             </div>
-            <div class="footer-links">
+            <div class="footer-nav">
                 <h4>Quick Links</h4>
-                <a href="#home">Home</a>
-                <a href="#services">Services</a>
-                <a href="#pricing">Pricing</a>
-                <a href="#contact">Contact</a>
+                <a href="index.html">Home</a>
+                <a href="volunteer.html">Volunteer</a>
+                <a href="blog.html">Articles</a>
             </div>
             <div class="footer-contact">
-                <h4>Contact Info</h4>
-                <p><i class="ph ph-phone"></i> 0549133216</p>
-                <p><i class="ph ph-envelope"></i> manuelshammah1718@gmail.com</p>
-                <p><i class="ph ph-map-pin"></i> Sunyani, Ghana</p>
+                <h4>Contact Us</h4>
+                <p>Email: info@gyic.org</p>
+                <p>Phone: +1 234 567 890</p>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; <span id="year"></span> Shammah Sat. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- Floating Action Buttons -->
-    <div class="floating-actions">
-        <a href="https://wa.me/233549133216" class="fab whatsapp" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
-            <i class="ph-fill ph-whatsapp-logo"></i>
-        </a>
-        <a href="tel:0549133216" class="fab phone" aria-label="Call Now">
-            <i class="ph-fill ph-phone-call"></i>
-        </a>
-    </div>
-
-    <!-- Script Link -->
     <script src="script.js"></script>
 </body>
 </html>

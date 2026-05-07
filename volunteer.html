@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join the Movement | Volunteer with GYIC</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar scrolled">
+        <div class="container nav-container">
+            <a href="index.html" class="logo-wrapper">
+                <img src="GYIC.jpg" alt="GYIC Logo" class="nav-logo">
+                <span class="logo-text">GLOBAL YOUTH INNOVATION CENTER</span>
+            </a>
+            
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="index.html#impact">Our Impact</a>
+                <a href="volunteer.html" class="active">Volunteer</a>
+                <a href="blog.html">Articles</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
+            
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-btn"><i class="ph ph-moon"></i></button>
+                <a href="#donate" class="btn btn-accent btn-sm">Donate</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="page-header section-padding">
+        <div class="container text-center">
+            <span class="badge">Engagement</span>
+            <h1>Be the Change</h1>
+            <p>Your time and skills can transform a life. Join our global community of volunteers.</p>
+        </div>
+    </section>
+
+    <!-- Opportunity Grid -->
+    <section class="opportunities section-padding bg-alt">
+        <div class="container">
+            <h2 class="section-title text-center mb-4">Upcoming Opportunities</h2>
+            <div class="opp-grid">
+                <div class="opp-card reveal">
+                    <div class="opp-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&q=80&w=800" alt="Mentorship">
+                        <span class="opp-tag">Education</span>
+                    </div>
+                    <div class="opp-body">
+                        <h3>Youth Mentor Program</h3>
+                        <p>Guide young entrepreneurs through our 3-month mentorship cycle in Sunyani.</p>
+                        <div class="opp-meta">
+                            <span><i class="ph ph-calendar"></i> Starts June 1st</span>
+                            <span><i class="ph ph-users"></i> 15 Slots Left</span>
+                        </div>
+                        <a href="#signup" class="btn btn-secondary btn-full">Apply Now</a>
+                    </div>
+                </div>
+
+                <div class="opp-card reveal">
+                    <div class="opp-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1544650039-22883e449231?auto=format&fit=crop&q=80&w=800" alt="Digital Literacy">
+                        <span class="opp-tag">Technology</span>
+                    </div>
+                    <div class="opp-body">
+                        <h3>Digital Literacy Workshop</h3>
+                        <p>Teach basic coding and digital tools to high school students in local communities.</p>
+                        <div class="opp-meta">
+                            <span><i class="ph ph-calendar"></i> Weekly Weekends</span>
+                            <span><i class="ph ph-users"></i> 5 Slots Left</span>
+                        </div>
+                        <a href="#signup" class="btn btn-secondary btn-full">Apply Now</a>
+                    </div>
+                </div>
+
+                <div class="opp-card reveal">
+                    <div class="opp-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&q=80&w=800" alt="Health Outreach">
+                        <span class="opp-tag">Health</span>
+                    </div>
+                    <div class="opp-body">
+                        <h3>Health & Wellbeing Drive</h3>
+                        <p>Assist medical professionals in our monthly community health screenings.</p>
+                        <div class="opp-meta">
+                            <span><i class="ph ph-calendar"></i> May 25th</span>
+                            <span><i class="ph ph-users"></i> 10 Slots Left</span>
+                        </div>
+                        <a href="#signup" class="btn btn-secondary btn-full">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Signup Section -->
+    <section class="volunteer-signup section-padding" id="signup">
+        <div class="container">
+            <div class="signup-flex">
+                <div class="signup-info reveal">
+                    <h2>Ready to Join?</h2>
+                    <p>Fill out the form to become a certified GYIC volunteer. We'll match you with opportunities that fit your passion.</p>
+                    <ul class="benefit-list">
+                        <li><i class="ph ph-check-circle"></i> Professional Training</li>
+                        <li><i class="ph ph-check-circle"></i> Networking with Global Leaders</li>
+                        <li><i class="ph ph-check-circle"></i> Certification of Impact</li>
+                    </ul>
+                </div>
+                
+                <div class="signup-form-card reveal">
+                    <form id="volunteer-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Full Name</label>
+                                <input type="text" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Email Address</label>
+                                <input type="email" placeholder="john@example.com" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Areas of Interest</label>
+                            <div class="checkbox-grid">
+                                <label class="checkbox-item">
+                                    <input type="checkbox" value="education"> <span>Education</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" value="tech"> <span>Technology</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" value="health"> <span>Health</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" value="advocacy"> <span>Advocacy</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Why do you want to volunteer?</label>
+                            <textarea rows="4" placeholder="Tell us your motivation..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">Submit Application</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer section-padding">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h3>GLOBAL YOUTH INNOVATION CENTER</h3>
+                <p>Empowering young people to create the future they desire.</p>
+            </div>
+            <div class="footer-nav">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="volunteer.html">Volunteer</a>
+                <a href="blog.html">Articles</a>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p>Email: info@gyic.org</p>
+                <p>Phone: +1 234 567 890</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

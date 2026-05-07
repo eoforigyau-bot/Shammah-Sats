@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYIC | Admin Control Center</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Admin-specific layout override */
+        .admin-body {
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            min-height: 100vh;
+        }
+        
+        .sidebar {
+            background: var(--clr-primary-dark);
+            color: var(--clr-white);
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        
+        .admin-main {
+            padding: 3rem;
+            background: var(--clr-bg-alt);
+        }
+        
+        .sidebar-nav {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+        .sidebar-nav a {
+            padding: 1rem;
+            border-radius: var(--br-sm);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            transition: var(--trans-fast);
+        }
+        
+        .sidebar-nav a:hover, .sidebar-nav a.active {
+            background: var(--clr-primary);
+        }
+        
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+        }
+        
+        .content-card {
+            background: var(--clr-white);
+            padding: 2rem;
+            border-radius: var(--br-md);
+            box-shadow: var(--shadow-soft);
+        }
+        
+        .upload-area {
+            border: 2px dashed var(--clr-primary);
+            padding: 3rem;
+            text-align: center;
+            border-radius: var(--br-md);
+            margin: 2rem 0;
+            cursor: pointer;
+            transition: var(--trans-fast);
+        }
+        
+        .upload-area:hover {
+            background: rgba(126, 184, 31, 0.05);
+        }
+        
+        .admin-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 3rem;
+        }
+        
+        .status-badge {
+            padding: 0.25rem 0.75rem;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 700;
+        }
+        
+        .status-live { background: #d1fae5; color: #065f46; }
+        .status-draft { background: #fef3c7; color: #92400e; }
+    </style>
+</head>
+<body>
+
+    <div class="admin-body">
+        <aside class="sidebar">
+            <div class="logo-wrapper">
+                <img src="GYIC.jpg" alt="Logo" class="nav-logo">
+                <span class="logo-text">GYIC Admin</span>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <a href="#" class="active"><i class="ph ph-squares-four"></i> Dashboard</a>
+                <a href="#"><i class="ph ph-article"></i> Articles</a>
+                <a href="#"><i class="ph ph-image"></i> Media Library</a>
+                <a href="#"><i class="ph ph-users"></i> Volunteers</a>
+                <a href="#"><i class="ph ph-chart-bar"></i> Impact Reports</a>
+                <a href="#"><i class="ph ph-gear"></i> Settings</a>
+            </nav>
+            
+            <div class="mt-auto">
+                <a href="index.html" class="btn btn-secondary btn-full">View Site</a>
+            </div>
+        </aside>
+
+        <main class="admin-main">
+            <header class="admin-header">
+                <div>
+                    <h1>Dashboard</h1>
+                    <p>Welcome back, Admin. Manage your impact today.</p>
+                </div>
+                <button class="btn btn-primary"><i class="ph ph-plus"></i> New Article</button>
+            </header>
+
+            <div class="dashboard-grid">
+                <div class="content-card">
+                    <h3>Recent Articles</h3>
+                    <table class="admin-table" style="width: 100%; margin-top: 1.5rem; border-collapse: collapse;">
+                        <tr style="border-bottom: 1px solid rgba(0,0,0,0.05); text-align: left;">
+                            <th style="padding: 1rem;">Title</th>
+                            <th style="padding: 1rem;">Category</th>
+                            <th style="padding: 1rem;">Status</th>
+                            <th style="padding: 1rem;">Actions</th>
+                        </tr>
+                        <tr style="border-bottom: 1px solid rgba(0,0,0,0.05);">
+                            <td style="padding: 1rem;">2025 Impact Report</td>
+                            <td style="padding: 1rem;">Reports</td>
+                            <td style="padding: 1rem;"><span class="status-badge status-live">Live</span></td>
+                            <td style="padding: 1rem;"><i class="ph ph-pencil"></i> <i class="ph ph-trash"></i></td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid rgba(0,0,0,0.05);">
+                            <td style="padding: 1rem;">Coding the Future</td>
+                            <td style="padding: 1rem;">Technology</td>
+                            <td style="padding: 1rem;"><span class="status-badge status-live">Live</span></td>
+                            <td style="padding: 1rem;"><i class="ph ph-pencil"></i> <i class="ph ph-trash"></i></td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 1rem;">Mentorship Launch</td>
+                            <td style="padding: 1rem;">Education</td>
+                            <td style="padding: 1rem;"><span class="status-badge status-draft">Draft</span></td>
+                            <td style="padding: 1rem;"><i class="ph ph-pencil"></i> <i class="ph ph-trash"></i></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="content-card">
+                    <h3>Quick Upload</h3>
+                    <div class="upload-area" id="drop-zone">
+                        <i class="ph ph-cloud-arrow-up" style="font-size: 3rem; color: var(--clr-primary);"></i>
+                        <p>Drag and drop images or reports here</p>
+                        <small>Supports JPG, PNG, PDF</small>
+                    </div>
+                    
+                    <div class="mt-4">
+                        <h4>SEO Checklist</h4>
+                        <ul style="margin-top: 1rem; display: flex; flex-direction: column; gap: 0.5rem;">
+                            <li><i class="ph ph-check-circle" style="color: var(--clr-success);"></i> Alt tags added</li>
+                            <li><i class="ph ph-check-circle" style="color: var(--clr-success);"></i> Meta descriptions set</li>
+                            <li><i class="ph ph-warning-circle" style="color: var(--clr-secondary);"></i> Missing OG images</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // Simple drag-and-drop demo
+        const dropZone = document.getElementById('drop-zone');
+        
+        dropZone.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            dropZone.style.background = 'rgba(126, 184, 31, 0.1)';
+        });
+        
+        dropZone.addEventListener('dragleave', () => {
+            dropZone.style.background = 'transparent';
+        });
+        
+        dropZone.addEventListener('drop', (e) => {
+            e.preventDefault();
+            dropZone.style.background = 'transparent';
+            alert('File received! In a real system, this would upload to your media library.');
+        });
+    </script>
+</body>
+</html>

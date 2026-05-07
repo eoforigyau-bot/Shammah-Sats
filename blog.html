@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stories of Impact | GYIC Articles</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar scrolled">
+        <div class="container nav-container">
+            <a href="index.html" class="logo-wrapper">
+                <img src="GYIC.jpg" alt="GYIC Logo" class="nav-logo">
+                <span class="logo-text">GLOBAL YOUTH INNOVATION CENTER</span>
+            </a>
+            
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="index.html#impact">Our Impact</a>
+                <a href="volunteer.html">Volunteer</a>
+                <a href="blog.html" class="active">Articles</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
+            
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-btn"><i class="ph ph-moon"></i></button>
+                <a href="#donate" class="btn btn-accent btn-sm">Donate</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Header -->
+    <section class="page-header section-padding">
+        <div class="container text-center">
+            <span class="badge">Insights & Stories</span>
+            <h1>Knowledge for Change</h1>
+            <p>Explore our latest articles, reports, and success stories from the field.</p>
+        </div>
+    </section>
+
+    <!-- Search & Filter -->
+    <section class="blog-controls py-4">
+        <div class="container control-flex">
+            <div class="search-box">
+                <i class="ph ph-magnifying-glass"></i>
+                <input type="text" id="blog-search" placeholder="Search articles...">
+            </div>
+            
+            <div class="categories">
+                <button class="cat-btn active" data-category="all">All</button>
+                <button class="cat-btn" data-category="impact">Impact</button>
+                <button class="cat-btn" data-category="education">Education</button>
+                <button class="cat-btn" data-category="tech">Technology</button>
+                <button class="cat-btn" data-category="reports">Annual Reports</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles Grid -->
+    <section class="articles section-padding">
+        <div class="container">
+            <!-- Featured Article -->
+            <div class="featured-article reveal">
+                <div class="featured-img">
+                    <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&q=80&w=1200" alt="Featured">
+                </div>
+                <div class="featured-content">
+                    <span class="cat-tag">Annual Reports</span>
+                    <h2>2025 Impact Report: A Year of Empowerment</h2>
+                    <p>Our comprehensive review of how we reached over 5,000 young people across the region this year.</p>
+                    <div class="article-meta">
+                        <span><i class="ph ph-calendar"></i> May 1, 2026</span>
+                        <span><i class="ph ph-clock"></i> 10 min read</span>
+                    </div>
+                    <a href="article.html" class="btn btn-primary">Read Full Report</a>
+                </div>
+            </div>
+
+            <!-- Regular Grid -->
+            <div class="blog-grid mt-5">
+                <!-- Article 1 -->
+                <div class="article-card reveal" data-category="tech">
+                    <div class="article-img">
+                        <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&q=80&w=800" alt="Tech">
+                    </div>
+                    <div class="article-body">
+                        <span class="cat-tag">Technology</span>
+                        <h3>Coding the Future: Tech in Rural Schools</h3>
+                        <p>How digital literacy is opening new doors for students in underserved communities.</p>
+                        <a href="article.html" class="read-more">Read More <i class="ph ph-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Article 2 -->
+                <div class="article-card reveal" data-category="impact">
+                    <div class="article-img">
+                        <img src="https://images.unsplash.com/photo-1542810634-71277d95dcbb?auto=format&fit=crop&q=80&w=800" alt="Impact">
+                    </div>
+                    <div class="article-body">
+                        <span class="cat-tag">Impact</span>
+                        <h3>Voices of Resilience: Sarah's Journey</h3>
+                        <p>From a small village to a community leader, Sarah shares her empowering story.</p>
+                        <a href="article.html" class="read-more">Read More <i class="ph ph-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Article 3 -->
+                <div class="article-card reveal" data-category="education">
+                    <div class="article-img">
+                        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&q=80&w=800" alt="Education">
+                    </div>
+                    <div class="article-body">
+                        <span class="cat-tag">Education</span>
+                        <h3>Bridging the Gap: The Mentorship Project</h3>
+                        <p>Connecting urban professionals with rural youth for long-term career success.</p>
+                        <a href="article.html" class="read-more">Read More <i class="ph ph-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer section-padding">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h3>GLOBAL YOUTH INNOVATION CENTER</h3>
+                <p>Empowering young people to create the future they desire.</p>
+            </div>
+            <div class="footer-nav">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="volunteer.html">Volunteer</a>
+                <a href="blog.html">Articles</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
